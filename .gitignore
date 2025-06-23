@@ -17,10 +17,12 @@ coverage/
 models/
 model_checkpoints/
 checkpoints/
+!/
+!/clinical_reasoning_model_enhanced/
 */checkpoints/
 */models/
-/clinical_reasoning_model
-/clinical_reasoning_model_enhanced
+/clinical_reasoning_model/
+/clinical_reasoning_model_enhanced/
 # OS generated files
 .DS_Store
 Thumbs.db
