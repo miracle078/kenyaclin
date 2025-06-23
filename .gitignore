@@ -13,17 +13,71 @@ dist/
 build/
 out/
 coverage/
-# Model folders with checkpoints
+
+# ALL SUBFOLDERS - This will exclude everything in subdirectories
+*/
+
+# Model files and checkpoints (large files)
+*.pkl
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.model
+*.weights
+*.ckpt
+*.bin
+*.safetensors
 models/
 model_checkpoints/
 checkpoints/
-!/
-!/clinical_reasoning_model_enhanced/
-*/checkpoints/
-*/models/
-/kenyaclin/*
-!/kenyaclin/
-/clinical_reasoning_model_enhanced/
+weights/
+
+# Data files (potentially large)
+*.csv
+*.json
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.hdf5
+*.h5
+data/
+datasets/
+
+# Large media and document files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar
+*.gz
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.mp3
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+
 # OS generated files
 .DS_Store
 Thumbs.db
@@ -41,32 +95,39 @@ desktop.ini
 logs/
 *.log
 
+# Python cache and environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+venv/
+env/
+.venv/
+.conda/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
 # Misc
 *.local
 *.cache
 *.tmp
 *.swp
+*.bak
+*.backup
+*.old
 
 # OneDrive sync files
 ~$*
 *.lnk
 
-# Ignore Microsoft Word documents
-*.docx
-
-# Ignore generated submission files
+# Generated files
 submission*.csv
-
-# Ignore manifest files
 manifest-*.json
-
-# Ignore data files if not needed in repo
-# Uncomment if you don't want to track these large files
-# train.csv
 train_raw.csv
-# test.csv
 test_raw.csv
-# SampleSubmission.csv
 
-# Ignore Jupyter notebook checkpoints
-.ipynb_checkpoints/
+# Exclude files over certain size (you can add specific large files here)
+# Add any specific large files you find with: git ls-files --others --ignored --exclude-standard
