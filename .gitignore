@@ -19,6 +19,8 @@ model_checkpoints/
 checkpoints/
 */checkpoints/
 */models/
+/clinical_reasoning_model
+/clinical_reasoning_model_enhanced
 # OS generated files
 .DS_Store
 Thumbs.db
