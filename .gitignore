@@ -21,7 +21,8 @@ checkpoints/
 !/clinical_reasoning_model_enhanced/
 */checkpoints/
 */models/
-/clinical_reasoning_model/
+/kenyaclin/*
+!/kenyaclin/
 /clinical_reasoning_model_enhanced/
 # OS generated files
 .DS_Store
